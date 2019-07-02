@@ -19,5 +19,6 @@ public class CoreObjectJNI {
     public static native void Draw(float angleX, float angleY);
     public static native void SurfaceChanged(int width, int height);
     public native String stringFromJNI();
+    public static native void main();
 
 }

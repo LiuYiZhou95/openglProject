@@ -6,7 +6,7 @@
 #include <iostream>
 #include <GLES2/gl2.h>
 #include <android/log.h>
-
+#include "Octree/Main.h"
 
 using namespace std;
 #define LOGI(level, ...) __android_log_print(ANDROID_LOG_INFO, "NATIVE_LOG", __VA_ARGS__)
@@ -79,6 +79,10 @@ JNI_METHOD(void,SurfaceChanged)(JNIEnv *env, jclass type,jint width, jint height
     glViewport(0, 0, width, height);
 }
 
+JNI_METHOD(void,main)(JNIEnv *env, jclass type) {
+    Main main;
+
+}
 
 #ifdef __cplusplus
 }

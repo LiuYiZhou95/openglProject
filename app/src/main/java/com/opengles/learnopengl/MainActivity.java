@@ -15,12 +15,16 @@ public class MainActivity extends AppCompatActivity {
 
     private BaseRender baseRenderer;
     private GLSurfaceView mGLView;
+    private  CoreObjectJNI mCoreObjectJNI;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        baseRenderer = new BaseRender(this);
-        mGLView = new GLView(this);
-        setContentView(mGLView);
+//        baseRenderer = new BaseRender(this);
+//        mGLView = new GLView(this);
+//        setContentView(mGLView);
+
+        mCoreObjectJNI.main();
 
 //        测试JNI成功
 //        setContentView(R.layout.activity_main);
@@ -28,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
 //        // Example of a call to a native method
 //        TextView tv = (TextView) findViewById(R.id.sample_text);
 //        tv.setText(coreObjectJNI.stringFromJNI());
+    //
+
     }
 
 
